@@ -1,4 +1,4 @@
-# spots-results-notifier
+# sports-results-notifier
 
 Learned about:
 1. The ability to harvest data from non-api sources (Web scrapping)
