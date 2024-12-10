@@ -26,7 +26,7 @@ foreach (var nbaGame in nbaGames)
     // Console.WriteLine($"Game : {i}");
     foreach (var table in gameTables)
     {
-        results += "<table border='1' style='border-collapse: collapse;'>";
+        results += "<table style='border: 1px solid black; border-collapse: collapse;'>";
         var rows = table.SelectNodes(".//tbody/tr");
         
         foreach (var row in rows)
