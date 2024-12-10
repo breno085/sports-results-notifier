@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Mail;
 
 var web = new HtmlWeb();
-var doc = web.Load("https://www.basketball-reference.com/boxscores/?month=12&day=8&year=2024");
+var doc = web.Load("https://www.basketball-reference.com/boxscores/");
 
 var numberOfGames = doc.DocumentNode.SelectNodes("//*[@id=\"content\"]/div[2]/h2");
 var gamesDate = doc.DocumentNode.SelectNodes("//*[@id=\"content\"]/h1");
@@ -22,13 +22,13 @@ foreach (var nbaGame in nbaGames)
     var gameTables = nbaGame.SelectNodes(".//table");
     i++;
     results += $"<h3>Game: {i}</h3>";
-    
+
     // Console.WriteLine($"Game : {i}");
     foreach (var table in gameTables)
     {
         results += "<table style='border: 1px solid black; border-collapse: collapse;'>";
         var rows = table.SelectNodes(".//tbody/tr");
-        
+
         foreach (var row in rows)
         {
             results += "<tr>";
@@ -52,25 +52,32 @@ results += "</body></html>";
 string smtpAddress = "smtp.gmail.com";
 int portNumber = 587;
 bool enableSSL = true;
-string emailFromAddress = "br3noacioli@gmail.com"; //Sender Email Address  
-string password = "ctrnldceonsmzrrh"; //Sender Password  
-string emailToAddress = "br3noacioli@gmail.com"; //Receiver Email Address  
+string emailFromAddress = "myemail@gmail.com"; //Sender Email Address
+//Sender Password - its diferent from the main email password - read README.md
+//Have to create an specific app password
+string password = "appPassword"; 
+string emailToAddress = "receiveremail@gmail.com"; //Receiver Email Address  
 string subject = "NBA Games";
 string body = results;
 
-using (MailMessage mail = new MailMessage())
+SendEmail();
+
+void SendEmail()
 {
-    mail.From = new MailAddress(emailFromAddress);
-    mail.To.Add(emailToAddress);
-    mail.Subject = subject;
-    mail.Body = body;
-    mail.IsBodyHtml = true;
-    //mail.Attachments.Add(new Attachment("D:\\TestFile.txt"));//--Uncomment this to send any attachment  
-    using (SmtpClient smtp = new SmtpClient(smtpAddress, portNumber))
+    using (MailMessage mail = new MailMessage())
     {
-        smtp.Credentials = new NetworkCredential(emailFromAddress, password);
-        smtp.EnableSsl = enableSSL;
-        smtp.Send(mail);
+        mail.From = new MailAddress(emailFromAddress);
+        mail.To.Add(emailToAddress);
+        mail.Subject = subject;
+        mail.Body = body;
+        mail.IsBodyHtml = true;
+        //mail.Attachments.Add(new Attachment("D:\\TestFile.txt"));//--Uncomment this to send any attachment  
+        using (SmtpClient smtp = new SmtpClient(smtpAddress, portNumber))
+        {
+            smtp.Credentials = new NetworkCredential(emailFromAddress, password);
+            smtp.EnableSsl = enableSSL;
+            smtp.Send(mail);
+        }
     }
 }
 
