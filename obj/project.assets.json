@@ -79,11 +79,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/brenoacioli/Documents/spots-results-notifier/spots-results-notifier.csproj",
+      "projectUniqueName": "/home/brenoacioli/Documents/sports-results-notifier/spots-results-notifier.csproj",
       "projectName": "spots-results-notifier",
-      "projectPath": "/home/brenoacioli/Documents/spots-results-notifier/spots-results-notifier.csproj",
+      "projectPath": "/home/brenoacioli/Documents/sports-results-notifier/spots-results-notifier.csproj",
       "packagesPath": "/home/brenoacioli/.nuget/packages/",
-      "outputPath": "/home/brenoacioli/Documents/spots-results-notifier/obj/",
+      "outputPath": "/home/brenoacioli/Documents/sports-results-notifier/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/brenoacioli/.nuget/NuGet/NuGet.Config"

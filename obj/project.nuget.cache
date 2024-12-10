@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KxY5Idnixrc=",
+  "dgSpecHash": "/fgOqz8TjUY=",
   "success": true,
-  "projectFilePath": "/home/brenoacioli/Documents/spots-results-notifier/spots-results-notifier.csproj",
+  "projectFilePath": "/home/brenoacioli/Documents/sports-results-notifier/spots-results-notifier.csproj",
   "expectedPackageFiles": [
     "/home/brenoacioli/.nuget/packages/htmlagilitypack/1.11.71/htmlagilitypack.1.11.71.nupkg.sha512"
   ],

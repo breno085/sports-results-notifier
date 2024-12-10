@@ -16,4 +16,7 @@ Resources:
 [Basketball Reference](https://www.basketball-reference.com/boxscores/)
 [Papercut - Use it for local Email SMTP testing](https://github.com/ChangemakerStudios/Papercut-SMTP)
 
+To remember:
+Some websites don't authorise scrapping.
+It's not simple to scrap data from websites generated dynamically with the help of Javascript frameworks. When you create your own project, be aware that it's easier to scrape from more traditional, simple, server-based ones.
 
