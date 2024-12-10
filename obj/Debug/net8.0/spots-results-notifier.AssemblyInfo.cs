@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("spots-results-notifier")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8606e8ed4e3d61152faef844a0a383db700efb0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72d1b6fee0c08265d37d5b9b704cdfade4f0dcf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("spots-results-notifier")]
 [assembly: System.Reflection.AssemblyTitleAttribute("spots-results-notifier")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
