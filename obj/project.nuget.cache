@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KxY5Idnixrc=",
+  "success": true,
+  "projectFilePath": "/home/brenoacioli/Documents/spots-results-notifier/spots-results-notifier.csproj",
+  "expectedPackageFiles": [
+    "/home/brenoacioli/.nuget/packages/htmlagilitypack/1.11.71/htmlagilitypack.1.11.71.nupkg.sha512"
+  ],
+  "logs": []
+}
